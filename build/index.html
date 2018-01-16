@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles/main.min.css" rel="stylesheet">
+    <title>html-js</title>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Выбираем набор</h1>
+</div>
+
+<div class="container">
+    <div class="col-lg-4 col-md-4">
+        <div class="form-horizontal">
+            <div class="form-group ">
+                <label class="control-label">Голова:</label>
+                <div>
+                    <select class="form-control" id="head">
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Тело:</label>
+                <div>
+                    <select class="form-control" id="body">
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Ноги:</label>
+                <div>
+                    <select class="form-control" id="foot">
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    <button id="sendJSONButton" class="btn-info pull-right">
+                        Отправить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-2"></div>
+    <div class="col-lg-6 col-md-6 border-container">
+        <div class="row">
+
+            <div class="">
+                <img id="hatimage" src="images/placeholder350x150.png" alt="placeholder" width="343" height="147">
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="">
+                <img id="vestimage" src="images/placeholder350x150.png" alt="placeholder" width="343" height="147">
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="">
+                <img id="shoesimage" src="images/placeholder350x150.png" alt="placeholder" width="343" height="147">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row placeholder placeholder"></div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2 col-md-2"></div>
+        <div class="col-lg-8 col-md-8">
+            <form>
+                <div class="form-group">
+                    <label>
+                        JSON:
+                    </label>
+                    <textarea id="jsonresponse" rows="10" cols="100" readonly></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-2 col-md-2"></div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="scripts/main.min.js"></script>
+</body>
+
+</html>
